@@ -7,7 +7,8 @@ import org.junit.Test;
 public class TestList {
 @Test
 public void testCopy(){//拷贝test
-	//结论使用拷贝构造函数，深拷贝，因为修改p1任意一个的值，两个都会变。直接c = b,浅拷贝
+	//结论：对象为值拷贝，值修改了，两个list都会修改，但是其中一个增删一条，另外一个不同步。
+	//直接c = b,浅拷贝，有一个list增加或删除，另一个同步修改
 	//1.深拷贝
 	ArrayList list1=new ArrayList();
 	String name ="aaaaa";
