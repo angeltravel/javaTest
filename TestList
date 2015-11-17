@@ -7,10 +7,10 @@ import org.junit.Test;
 public class TestList {
  @Test
 	public void testCopy(){//拷贝test
-		//结论：使用拷贝构造函数，深拷贝，因为修改p1任意一个的值，两个都会变。直接c = b,浅拷贝
-		//1.深拷贝
-		    ArrayList list1=new ArrayList();
-		    String name ="aaaaa";
+	//结论：使用拷贝构造函数，深拷贝，因为修改p1任意一个的值，两个都会变。直接c = b,浅拷贝
+	//1.深拷贝
+	ArrayList list1=new ArrayList();
+	 String name ="aaaaa";
         Person p1=new Person();
         p1.setAge(32);
         p1.setName("陈抒");
