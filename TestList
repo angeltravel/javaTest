@@ -5,9 +5,9 @@ import java.util.Map;
 import org.junit.Test;
 
 public class TestList {
- @Test
+@Test
 public void testCopy(){//拷贝test
-	//结论：使用拷贝构造函数，深拷贝，因为修改p1任意一个的值，两个都会变。直接c = b,浅拷贝
+	//结论使用拷贝构造函数，深拷贝，因为修改p1任意一个的值，两个都会变。直接c = b,浅拷贝
 	//1.深拷贝
 	ArrayList list1=new ArrayList();
 	String name ="aaaaa";
@@ -46,5 +46,6 @@ public void testCopy(){//拷贝test
         ArrayList list6=list5;//浅拷贝
         
         System.out.println(list5.size() +"list6 size:"+list6.size());
+
+       
 	}
-}
